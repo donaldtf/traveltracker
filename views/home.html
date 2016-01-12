@@ -1,0 +1,82 @@
+<div class="row">
+
+  <!-- Previous Trips Section -->
+  <div class="col-md-4 center">
+
+
+    <h1>Previous Trips</h1>
+
+    <div class="list-group">
+
+    </div>
+
+
+  </div>
+
+  <!-- Next Trip Section -->
+  <div class="col-md-4 nexttrip">
+    <h1>My Next Trip</h1>
+
+    <div class="nexttripborder">
+
+      <div class="row">
+
+      <div class="col-sm-6">
+        <h2>{{ nexttrip.title }}</h2>
+        <h3>{{ nexttrip.startdate }} - {{ nexttrip.enddate }}</h3>
+
+        <div class="verticalbuttons">
+
+          <ul>
+            <li>
+              <md-button class="md-raised md-primary">Overview</md-button>
+            </li>
+            <li>
+              <md-button class="md-raised md-primary">Itinerary</md-button>
+            </li>
+            <li>
+              <md-button class="md-raised md-primary">Budget</md-button>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-6" >
+        <img class="travelimage" ng-src="{{ nexttrip.photo }}">
+      </div>
+
+    </div>
+
+      <div>
+         <h2>Days till Departure: {{ getDaysLeft() }}</h2>
+      </div>
+
+    </div>
+
+    <md-button class="md-raised md-primary">Plan A New Trip</md-button>
+
+  </div>
+
+
+  <!-- Upcoming Trips Section -->
+  <div class="col-md-4 center">
+    <h1>Upcoming Trips</h1>
+
+
+  </div>
+
+
+</div>
+
+
+<!-- <div class="jumbotron text-center">
+    <h1>The Homey Page</h1>
+    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>
+
+    <a ui-sref=".list" class="btn btn-primary">List</a>
+    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+</div>
+
+<div ui-view></div> -->
